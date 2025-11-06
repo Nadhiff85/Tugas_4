@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Pribadi Saya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <h1 id="main-title" title="Profil Pribadi"> Profil Pribadi Saya </h1>
+
+    <!-- Profil Section dengan gambar -->
+    <div class="profile-section">
+      <div class="profile-image">
+        <img src="nadhif.jpg" alt="Foto Profil Nadhif Azhar" width="200" height="200">
+      </div>
+      <div class="profile-info">
+        <p><strong> Nama Lengkap:</strong> Nadhif Azhar</p>
+        <p><strong> NIM:</strong> 246270033</p>
+        <p><strong> Hobi:</strong> Saya menyukai olahraga seperti sepak bola, futsal, dan bulutangkis.</p>
+      </div>
+    </div>
+
+    <!-- Tabel Biodata -->
+    <h2 class="section-header"> Biodata Lengkap</h2>
+    <table id="biodata-table" title="Tabel Biodata">
+      <thead>
+        <tr>
+          <th>Keterangan</th>
+          <th>Informasi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nama Lengkap</td>
+          <td>Nadhif Azhar</td>
+        </tr>
+        <tr>
+          <td>Tanggal Lahir</td>
+          <td>16 Maret 2006</td>
+        </tr>
+        <tr>
+          <td>Alamat</td>
+          <td>Ujuna</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>nadhifazhar16@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Daftar Hobi (UL dan OL) -->
+    <h2> Hobi & Aktivitas Favorit</h2>
+    <div class="list-container">
+      <div class="list-box">
+        <h3> Hobi Olahraga (Unordered List)</h3>
+        <ul class="hobby-list">
+          <li>Sepak Bola</li>
+          <li>Futsal</li>
+          <li>Bulutangkis</li>
+          <li>Jogging</li>
+        </ul>
+      </div>
+      <div class="list-box">
+        <h3> Aktivitas Harian (Ordered List)</h3>
+        <ol class="activity-list">
+          <li>Berolahraga di pagi hari</li>
+          <li>Belajar dan mengerjakan tugas</li>
+          <li>Bermain game atau menonton film</li>
+          <li>Berlatih olahraga dengan teman</li>
+          <li>Istirahat cukup</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Form Kontak -->
+    <h2> Formulir Kontak</h2>
+    <form class="contact-form" id="contact-form" title="Form Kontak">
+      <div class="form-group">
+        <label for="nama"> Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+      </div>
+
+      <div class="form-group">
+        <label for="email"> Email:</label>
+        <input type="email" id="email" name="email" placeholder="contoh@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="password"> password:</label>
+        <input type="password" placeholder="masukkan password">
+      </div>
+
+      <div class="form-group">
+        <label> Jenis Kelamin:</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="jenis-kelamin" value="laki-laki"> Laki-laki
+          </label>
+          <label>
+            <input type="radio" name="jenis-kelamin" value="perempuan"> Perempuan
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label> Hobi (pilih minimal 3):</label>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="hobi" value="sepak-bola">  Sepak Bola
+          </label>
+          <label>
+            <input type="checkbox" name="hobi" value="futsal">  Futsal
+          </label>
+          <label>
+            <input type="checkbox" name="hobi" value="bulutangkis">  Bulutangkis
+          </label>
+        </div>
+      </div>
+
+      <button type="submit"> Submit</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Profil Pribadi Nadhif. All Rights Reserved. Made with Nadhif</p>
+    </footer>
+  </div>
+
+  <!--  Tambahan JavaScript untuk notifikasi -->
+  <script>
+    const form = document.getElementById("contact-form");
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Mencegah submit
+      alert(" Terima kasih! Anda telah menyelesaikan formulir.");
+      form.reset(); // Kosongkan kembali
+    });
+  </script>
+</body>
+</html>
